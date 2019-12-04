@@ -2,8 +2,55 @@
 @import "libs";
 @import "fonts";
 
+html, body {
+    font-family: playfair-display;
+}
 
+.logo {
+    height: 1.3rem;
+}
 
+.img-full {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-fluid {
+    width: 100%;
+    object-fit: cover;
+}
+
+.form-glass {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000; 
+    input {
+        padding: .3em;
+        background-color: rgba(0,0,0,0);
+        border: 0;
+
+        &:focus {
+            border: 0;
+            outline: 0;
+        }
+        &[type="submit"] {
+            background: url(../img/action/send_icon.png) no-repeat;
+            background-size: contain;
+            height: 1em;
+            width: 2em;
+            cursor: pointer;
+        }
+    }
+}
+
+.social {
+    a {
+        color: #626262;
+        &+a {
+            margin-left: 1rem;
+        }
+    }
+}
 
 
 @import "media";
